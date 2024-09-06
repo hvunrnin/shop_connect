@@ -1,0 +1,14 @@
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/bin/Debug/netcoreapp2.2/dotnet_shop.deps.json
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/bin/Debug/netcoreapp2.2/dotnet_shop.runtimeconfig.json
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/bin/Debug/netcoreapp2.2/dotnet_shop.runtimeconfig.dev.json
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/bin/Debug/netcoreapp2.2/dotnet_shop.dll
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/bin/Debug/netcoreapp2.2/dotnet_shop.pdb
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/obj/Debug/netcoreapp2.2/dotnet_shop.csprojAssemblyReference.cache
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/obj/Debug/netcoreapp2.2/dotnet_shop.csproj.CoreCompileInputs.cache
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/obj/Debug/netcoreapp2.2/dotnet_shop.RazorAssemblyInfo.cache
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/obj/Debug/netcoreapp2.2/dotnet_shop.RazorAssemblyInfo.cs
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/obj/Debug/netcoreapp2.2/dotnet_shop.AssemblyInfoInputs.cache
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/obj/Debug/netcoreapp2.2/dotnet_shop.AssemblyInfo.cs
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/obj/Debug/netcoreapp2.2/dotnet_shop.RazorTargetAssemblyInfo.cache
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/obj/Debug/netcoreapp2.2/dotnet_shop.dll
+/Users/hvunrnin/4-1/dotnet_angular/dotnet_shop/obj/Debug/netcoreapp2.2/dotnet_shop.pdb
