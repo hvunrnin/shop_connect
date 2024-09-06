@@ -25,6 +25,12 @@ namespace dotnet_shop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -42,6 +48,7 @@ namespace dotnet_shop
             }
 
             app.UseHttpsRedirection();
+            app.UseCors("AllowAllOrigins");  // CORS 정책 적용
             app.UseMvc();
         }
     }
