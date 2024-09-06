@@ -1,13 +1,32 @@
-<p>product works!</p>
+<p>Product Management</p>
+
+<!-- 제품 목록 -->
 <div *ngIf="products.length > 0; else noProducts">
-    <ul>
-      <li *ngFor="let product of products">
-        <strong>{{ product.name }}</strong> - {{ product.price | currency }}
-      </li>
-    </ul>
-  </div>
-  
-  <ng-template #noProducts>
-    <p>No products available.</p>
-  </ng-template>
-  
+  <ul>
+    <li *ngFor="let product of products">
+      <strong>{{ product.name }}</strong> - {{ product.price | currency }}
+      <!-- Edit 버튼 -->
+      <button (click)="editProduct(product)">Edit</button>
+      <!-- Delete 버튼 -->
+      <button (click)="deleteProduct(product.id)">Delete</button>
+    </li>
+  </ul>
+</div>
+
+<!-- 제품 목록이 없을 때 표시 -->
+<ng-template #noProducts>
+  <p>No products available.</p>
+</ng-template>
+
+<!-- 제품 추가/수정 폼 -->
+<div>
+  <h3>{{ isEditing ? 'Edit' : 'Add' }} Product</h3>
+  <form (submit)="isEditing ? updateProduct() : addProduct()">
+    <label for="name">Product Name</label>
+    <input type="text" [(ngModel)]="selectedProduct.name" name="name" required>
+    <label for="price">Product Price</label>
+    <input type="number" [(ngModel)]="selectedProduct.price" name="price" required>
+    <button type="submit">{{ isEditing ? 'Update' : 'Add' }} Product</button>
+    <button type="button" (click)="clearForm()">Cancel</button>
+  </form>
+</div>
