@@ -1,1 +1,8 @@
-/appsettings.json
+# Ignore the appsettings.json file
+appsettings.json
+
+# Ignore the solution file
+dotnet_shop.sln
+
+# Ignore everything inside the /bin directory
+/bin/
