@@ -6,3 +6,5 @@ dotnet_shop.sln
 
 # Ignore everything inside the /bin directory
 /bin/
+/Migrations/
+/Properties/
