@@ -11,9 +11,10 @@ namespace dotnet_shop.Controllers
     {
         private readonly ProductService _service;
 
-        public ProductController()
+        // 의존성 주입으로 ProductService를 주입받음
+        public ProductController(ProductService service)
         {
-            _service = new ProductService(); // 간단한 구현을 위해 서비스 인스턴스 생성
+            _service = service;
         }
 
         [HttpGet]
