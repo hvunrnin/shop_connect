@@ -66,11 +66,13 @@ namespace dotnet_shop
             }
 
             app.UseHttpsRedirection();
-                // CORS 설정 추가
+            
+            // CORS 설정 추가
             app.UseCors(builder =>
                 builder.AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader());
+            
             app.UseMvc();
         }
     }

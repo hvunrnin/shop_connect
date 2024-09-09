@@ -1,0 +1,133 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #4a4a4a;
+  }
+  
+  /* 제품 목록 스타일 */
+  .product-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .product-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .product-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-list strong {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* 제품 정보 영역 */
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .product-info span {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  /* 버튼 스타일 */
+  button {
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  .edit-btn {
+    background-color: #5bc0de;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #31b0d5;
+  }
+  
+  .delete-btn {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c9302c;
+  }
+  
+  /* 제품 추가/수정 폼 스타일 */
+  .form-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;  /* 버튼 사이 간격 */
+  }
+  
+  /* 제출 및 취소 버튼 스타일 */
+  .submit-btn {
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .submit-btn:hover {
+    background-color: #4cae4c;
+  }
+  
+  .cancel-btn {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #ec971f;
+  }
+  

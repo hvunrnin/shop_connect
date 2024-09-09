@@ -1,14 +1,17 @@
 <p>Product Management</p>
 
 <!-- 제품 목록 -->
-<div *ngIf="products.length > 0; else noProducts">
+<div class="product-list" *ngIf="products.length > 0; else noProducts">
   <ul>
     <li *ngFor="let product of products">
-      <strong>{{ product.name }}</strong> - {{ product.price | currency }}
-      <!-- Edit 버튼 -->
-      <button (click)="editProduct(product)">Edit</button>
-      <!-- Delete 버튼 -->
-      <button (click)="deleteProduct(product.id)">Delete</button>
+      <div class="product-info">
+        <strong>{{ product.name }}</strong>
+        <span>{{ product.price | currency }}</span>
+      </div>
+      <div>
+        <button (click)="editProduct(product)" class="edit-btn">Edit</button>
+        <button (click)="deleteProduct(product.id)" class="delete-btn">Delete</button>
+      </div>
     </li>
   </ul>
 </div>
@@ -19,14 +22,18 @@
 </ng-template>
 
 <!-- 제품 추가/수정 폼 -->
-<div>
+<div class="form-container">
   <h3>{{ isEditing ? 'Edit' : 'Add' }} Product</h3>
-  <form (submit)="isEditing ? updateProduct() : addProduct()">
+  <form (ngSubmit)="isEditing ? updateProduct() : addProduct()">
     <label for="name">Product Name</label>
     <input type="text" [(ngModel)]="selectedProduct.name" name="name" required>
+    
     <label for="price">Product Price</label>
     <input type="number" [(ngModel)]="selectedProduct.price" name="price" required>
-    <button type="submit">{{ isEditing ? 'Update' : 'Add' }} Product</button>
-    <button type="button" (click)="clearForm()">Cancel</button>
+    
+    <div class="form-buttons">
+      <button type="submit" class="submit-btn">{{ isEditing ? 'Update' : 'Add' }} Product</button>
+      <button type="button" class="cancel-btn" (click)="clearForm()">Cancel</button>
+    </div>
   </form>
 </div>
